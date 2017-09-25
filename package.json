@@ -1,0 +1,28 @@
+{
+  "name": "aws-cfn-ami-list",
+  "version": "0.0.0-dev",
+  "description": "List official (AWS) AMI as JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clifflu/aws-cfn-ami-list.git"
+  },
+  "keywords": [
+    "AWS",
+    "AMI",
+    "CloudFormation"
+  ],
+  "author": "Cliff Chao-kuan Lu <clifflu@gmail.com> (https://blog.clifflu.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/clifflu/aws-cfn-ami-list/issues"
+  },
+  "homepage": "https://github.com/clifflu/aws-cfn-ami-list#readme",
+  "dependencies": {
+    "aws-sdk": "^2.122.0",
+    "extend": "^3.0.1"
+  }
+}

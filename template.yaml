@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: List AWS Linux AMI for CFN and other automation tools
+Parameters:
+  CacheTtl:
+    Type: Number
+    Default: 1800000
+    Description: AMI cache timeout
+Resources:
+  CollectAmi:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.collectAmi
+      Runtime: nodejs6.10
+      CodeUri: .
+      Timeout: 60
+      MemorySize: 320
+      Policies:
+        Statement:
+          - Effect: Allow
+            Action: ec2:DescribeImages
+            Resource: "*"
+      Environment:
+        Variables:
+          TTL: !Ref CacheTtl
+      Events:
+        PutResource:
+          Type: Api
+          Properties:
+            Path: /ami
+            Method: get
