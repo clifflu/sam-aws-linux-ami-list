@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion : '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: List AWS Linux AMI for CFN and other automation tools
+Description: List latest Amazon Linux AMI ID from deployed region
 Parameters:
   CacheTtl:
     Type: Number

@@ -1,6 +1,6 @@
 # sam-aws-linux-ami-list
 
-List latest Amazon Linux AMI ID from global regions as JSON.
+List latest Amazon Linux AMI ID from deployed regions as JSON.
 
 ## Requirements
 
