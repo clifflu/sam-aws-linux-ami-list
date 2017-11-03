@@ -1,14 +1,14 @@
 {
-  "name": "aws-cfn-ami-list",
+  "name": "sam-aws-linux-ami-list",
   "version": "0.0.0-dev",
-  "description": "List official (AWS) AMI as JSON",
+  "description": "List latest Amazon Linux AMI ID from deployed region as JSON",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clifflu/aws-cfn-ami-list.git"
+    "url": "git+https://github.com/clifflu/sam-aws-linux-ami-list.git"
   },
   "keywords": [
     "AWS",
@@ -18,9 +18,9 @@
   "author": "Cliff Chao-kuan Lu <clifflu@gmail.com> (https://blog.clifflu.net)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clifflu/aws-cfn-ami-list/issues"
+    "url": "https://github.com/clifflu/sam-aws-linux-ami-list/issues"
   },
-  "homepage": "https://github.com/clifflu/aws-cfn-ami-list#readme",
+  "homepage": "https://github.com/clifflu/sam-aws-linux-ami-list#readme",
   "dependencies": {
     "aws-sdk": "^2.122.0",
     "extend": "^3.0.1"
