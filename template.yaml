@@ -29,3 +29,14 @@ Resources:
           Properties:
             Path: /ami
             Method: get
+Outputs:
+  EndPoint:
+    Description: AMI ID list primary endpoint
+    Value:
+      Fn::Join:
+        - ""
+        - - https://
+          - !Ref ServerlessRestApi
+          - .execute-api.
+          - !Ref AWS::Region
+          - .amazonaws.com/Prod/ami
