@@ -5,7 +5,7 @@ Parameters:
   CacheTtl:
     Type: Number
     Default: 1800000
-    Description: AMI cache timeout
+    Description: AMI ID cache ttl, default = 1800000 (30 min)
 Resources:
   CollectAmi:
     Type: AWS::Serverless::Function
